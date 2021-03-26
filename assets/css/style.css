@@ -1,7 +1,7 @@
 :root {
     --cor-fundo-primaria: white;
-    --cor-fundo-secundaria: aqua;
-    --cor-fundo-terciaria: #04133d;
+    --cor-fundo-secundaria: rgb(40, 170, 0);
+    --cor-fundo-terciaria: rgb(20, 90, 0);
     --cor-texto-primaria: black;
     --cor-texto-secundaria: #636363;
     --cor-texto-terciaria: white;
@@ -91,16 +91,21 @@ header .coluna ul li a {
 
 footer {
     background-color: var(--cor-fundo-terciaria);
+    padding: 0 30px;
 }
 
 footer .container {
-    padding: 20px 42px;
+    padding: 20px 0;
     color: var(--cor-texto-terciaria);
     background-color: inherit;
 }
 
 footer .container a {
     color: inherit;
+}
+
+footer .info-contato {
+    padding: 0 20px;
 }
 
 footer .info-contato li {
@@ -126,10 +131,13 @@ footer .redes-sociais li a img {
 
 /* MAIN */
 
+main {
+    padding: 0 30px;
+}
+
 main .coluna section {
     border-bottom: 1px solid #d4e9ff;
-    margin: 30px;
-    padding: 0 16px 16px 16px;
+    padding: 16px;
 }
 
 main .coluna section h2 {
@@ -171,6 +179,7 @@ main .coluna-direita section {
     --cor-fundo-terciaria: #474747;
     --cor-texto-primaria: white;
     --cor-texto-secundaria: white;
+    --cor-texto-terciaria: white;
 }
 
 .dark-skin-chk:checked~.dark-mode-skin main {
@@ -183,11 +192,14 @@ main .coluna-direita section {
 
 .dark-mode-button {
     /* display: flex; */
-    cursor: pointer;
     font-size: 32px;
     color: var(--cor-texto-primaria);
     height: var(--altura-botao-dark);
     text-align: right;
+}
+
+.eye-button {
+    cursor: pointer;
 }
 
 /* @MEDIA */
@@ -223,13 +235,16 @@ main .coluna-direita section {
         border-radius: 50%;
         max-width: var(--altura-foto);
     }
-    footer .redes-sociais {
-        display: flex;
-        justify-content: center;
-    }
     header .coluna ul, header .coluna p, header .coluna h1 {
         text-align: left;
         padding: 0 16px;
+    }
+    footer .container {
+        padding: 20px 60px;
+    }
+    footer .redes-sociais {
+        display: flex;
+        justify-content: center;
     }
     main .coluna section {
         border: 1px solid #d4e9ff;
@@ -237,11 +252,6 @@ main .coluna-direita section {
         margin: 10px 30px;
     }
     .dark-mode-button {
-        /* display: flex; */
-        /*         cursor: pointer;
-        font-size: 32px;
-        color: var(--cor-texto-primaria);
-        height: var(--altura-botao-dark);
-        text-align: right; */
+        font-size: 28px;
     }
 }
