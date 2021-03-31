@@ -171,6 +171,13 @@ main .coluna section ul li {
     margin-bottom: 12px;
 }
 
+main .coluna section ul li:before {
+    margin-left: -1rem;
+    float: left;
+    content: "▸";
+    color: red;
+}
+
 main .coluna section ul li h3 {
     font-size: 1.1rem;
     margin-top: 14px;
