@@ -97,7 +97,7 @@ header .coluna ul li {
 /* FOOTER */
 
 footer {
-    background-color: var(--cor-fundo-footer1);
+    background-color: var(--cor-fundo-footer2);
     padding: 0 30px;
     padding: 0 30px 30px 30px;
 }
@@ -263,7 +263,6 @@ label span {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: space-between;
     }
     .coluna {
         flex-basis: 50%;
@@ -289,6 +288,9 @@ label span {
     footer .redes-sociais {
         display: flex;
         justify-content: center;
+    }
+    main .linha {
+        justify-content: space-between;
     }
     main .coluna section {
         border: 1px solid transparent;
