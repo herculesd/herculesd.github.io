@@ -328,3 +328,24 @@ label span {
         border-left-color: var(--cor-texto-main2);
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-fundo-header1: rgb(0, 0, 0);
+        --cor-fundo-header2: rgb(70, 70, 70);
+        --cor-fundo-main1: rgb(0, 0, 0);
+        --cor-fundo-main2: rgb(70, 70, 70);
+        --cor-fundo-footer1: rgb(0, 0, 0);
+        --cor-fundo-footer2: rgb(70, 70, 70);
+        --cor-texto-header1: rgb(255, 255, 255);
+        --cor-texto-header2: rgb(190, 190, 190);
+        --cor-texto-main1: rgb(255, 255, 255);
+        --cor-texto-main2: rgb(190, 190, 190);
+        --cor-texto-footer1: rgb(255, 255, 255);
+        --cor-texto-footer2: rgb(190, 190, 190);
+    }
+    .dark-mode label span {
+        transition: all ease .3s;
+        transform: translateX(25px);
+    }
+}
