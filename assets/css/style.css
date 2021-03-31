@@ -344,10 +344,10 @@ label span {
         --cor-texto-footer1: rgb(255, 255, 255);
         --cor-texto-footer2: rgb(190, 190, 190);
     }
-    /*     .dark-mode label span {
+    .dark-mode label span {
         transition: all ease .3s;
         transform: translateX(25px);
-    } */
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -365,8 +365,8 @@ label span {
         --cor-texto-footer1: rgb(255, 255, 255);
         --cor-texto-footer2: var(--cor-texto-footer1);
     }
-    /*    .dark-mode label span {
+    .dark-mode label span {
         transition: all ease .3s;
         transform: translateX(0px);
-    } */
+    }
 }
